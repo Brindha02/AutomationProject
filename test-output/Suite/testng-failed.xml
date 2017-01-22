@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+        <include name="common"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.DeleteComputer">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="deleteComputer" invocation-numbers="0"/>
+          <include name="loginwrapper"/>
+        </methods>
+      </class> <!-- testcases.DeleteComputer -->
+      <class name="testcases.ReadComputer">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginwrapper"/>
+        </methods>
+      </class> <!-- testcases.ReadComputer -->
+      <class name="testcases.CreateComputer">
+        <methods>
+          <include name="loginwrapper"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testcases.CreateComputer -->
+      <class name="testcases.EditComputer">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginwrapper"/>
+        </methods>
+      </class> <!-- testcases.EditComputer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
